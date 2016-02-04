@@ -14,7 +14,6 @@ public class MailGunResource extends EmailHook<FormDataMultiPart> {
         super(new MailGunTransformer("sandboxc83355d02c5148c1a9596d78119cf204.mailgun.org"));
     }
 
-
     @Override
     protected Response process(EmailMessage email) {
         System.out.println(email.recipient);
