@@ -29,6 +29,7 @@ public class HolderApplication extends Application<HolderConfiguration> {
         // TODO: implement application
         environment.jersey().register(MultiPartFeature.class);
         environment.jersey().register(new MailGunResource());
+        environment.jersey().register(new MailGun());
 
     }
 

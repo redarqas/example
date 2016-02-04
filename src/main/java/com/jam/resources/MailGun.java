@@ -13,7 +13,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-@Path("/mailgun")
+@Path("/old")
 public class MailGun {
 
     @GET
@@ -40,7 +40,7 @@ public class MailGun {
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     @Produces("application/text")
     public String mailgun(FormDataMultiPart multiPart) {
-        EmailMessage email = transform(multiPart);
+        //EmailMessage email = transform(multiPart);
 
 
 
