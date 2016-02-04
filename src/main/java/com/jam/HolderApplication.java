@@ -1,6 +1,7 @@
 package com.jam;
 
 import com.jam.resources.MailGun;
+import com.jam.resources.MailGunResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -27,7 +28,7 @@ public class HolderApplication extends Application<HolderConfiguration> {
                     final Environment environment) {
         // TODO: implement application
         environment.jersey().register(MultiPartFeature.class);
-        environment.jersey().register(new MailGun());
+        environment.jersey().register(new MailGunResource());
 
     }
 

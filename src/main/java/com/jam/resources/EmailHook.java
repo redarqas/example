@@ -19,6 +19,7 @@ public abstract class EmailHook<T> {
     @POST
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     public Response callback(T msg) {
+        System.out.println("Receive Message");
         EmailMessage email = transform.apply(msg);
         return process(email);
     }

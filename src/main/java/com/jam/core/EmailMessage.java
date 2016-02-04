@@ -13,15 +13,19 @@ public class EmailMessage {
 
 //    Name : sender (String)
 //    ------------------------ sender
+    public String sender;
 
 //    Name : from (String)
 //    ------------------------ from
+    public String from;
 
 //    Name : subject (String)
 //    ------------------------ subject
+    public String subject;
 
 //    Name : body-plain (String)
 //    ------------------------ body-plain
+    public String bodyPlain;
 
 //    Name : stripped-text (String)
 //    ------------------------ stripped-text
@@ -37,6 +41,7 @@ public class EmailMessage {
 
 //    Name : attachment-count (Int)
 //    ------------------------ attachment-count
+    public Integer attchementCount;
 
 //    Name : attachment-1 (InputStream)
 //            ------------------------ attachment-1
